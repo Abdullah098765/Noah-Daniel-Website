@@ -30,10 +30,14 @@ export default function AnimatedBackground() {
       color: string;
       glowColor: string;
       isPink: boolean;
+      width: number;
+      height: number;
 
-      constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+      constructor(width: number, height: number) {
+        this.width = width;
+        this.height = height;
+        this.x = Math.random() * width;
+        this.y = Math.random() * height;
         this.size = Math.random() * 4 + 2;
         this.speedX = Math.random() * 1.5 - 0.75;
         this.speedY = Math.random() * 1.5 - 0.75;
@@ -46,14 +50,14 @@ export default function AnimatedBackground() {
         this.x += this.speedX;
         this.y += this.speedY;
 
-        if (this.x > canvas.width) this.x = 0;
-        else if (this.x < 0) this.x = canvas.width;
+        if (this.x > this.width) this.x = 0;
+        else if (this.x < 0) this.x = this.width;
 
-        if (this.y > canvas.height) this.y = 0;
-        else if (this.y < 0) this.y = canvas.height;
+        if (this.y > this.height) this.y = 0;
+        else if (this.y < 0) this.y = this.height;
       }
 
-      draw() {
+      draw(ctx: CanvasRenderingContext2D) {
         // Outer glow
         const outerGradient = ctx.createRadialGradient(
           this.x, this.y, 0,
@@ -119,17 +123,19 @@ export default function AnimatedBackground() {
     // Create particles
     const particles: Particle[] = [];
     for (let i = 0; i < 70; i++) {
-      particles.push(new Particle());
+      particles.push(new Particle(canvas.width, canvas.height));
     }
 
     // Animation loop
     const animate = () => {
+      if (!ctx) return;
+      
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Update and draw particles
       particles.forEach(particle => {
         particle.update();
-        particle.draw();
+        particle.draw(ctx);
       });
 
       // Draw connections between particles
