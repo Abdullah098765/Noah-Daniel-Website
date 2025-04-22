@@ -46,7 +46,7 @@ export default function About() {
             viewport={{ once: true }}
             className="w-full md:w-1/2"
           >
-            <h3 className="text-2xl font-semibold mb-4">Hi, I'm {SITE_CONFIG.name}</h3>
+            <h3 className="text-2xl font-semibold mb-4">Hi, I&apos;m {SITE_CONFIG.name}</h3>
             {SITE_CONFIG.about.description.map((paragraph: string, index: number) => (
               <p key={index} className="text-gray-600 mb-4">
                 {paragraph}

@@ -22,7 +22,7 @@ export default function Testimonials() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">What Clients Say</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Don't just take our word for it - hear from businesses that have experienced growth with our solutions.
+            Don&apos;t just take our word for it - hear from businesses that have experienced growth with our solutions.
           </p>
         </motion.div>
 
