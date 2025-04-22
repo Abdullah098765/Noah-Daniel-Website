@@ -1,7 +1,6 @@
 'use client';
 
 import { useParams } from 'next/navigation';
-import { SITE_CONFIG } from '../../config/constants';
 import { motion } from 'framer-motion';
 import { FaArrowLeft } from 'react-icons/fa';
 import Link from 'next/link';
