@@ -27,17 +27,19 @@ export default function About() {
             viewport={{ once: true }}
             className="w-full md:w-1/2"
           >
-            <div className="relative w-64 h-64 mx-auto md:mx-0">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-pink-500 rounded-full blur-xl opacity-30"></div>
-              <div className="relative w-full h-full rounded-full overflow-hidden">
-                <Image
-                  src={SITE_CONFIG.profileImage}
-                  alt={SITE_CONFIG.name}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="relative w-64 h-64 mx-auto mb-8"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-full animate-spin-slow"></div>
+              <img
+                src={SITE_CONFIG.aboutImage}
+                alt={SITE_CONFIG.name}
+                className="relative w-full h-full object-cover rounded-full border-4 border-white"
+              />
+            </motion.div>
           </motion.div>
 
           <motion.div

@@ -8,6 +8,7 @@ export const SITE_CONFIG = {
 
   // Profile Image
   profileImage: '/profile_image.jpg', // Add your image to public folder
+  aboutImage: '/about_image.jpg', // Add your about section image to public folder
 
   // About Section
   about: {
@@ -83,9 +84,9 @@ export const SITE_CONFIG = {
 
   // Social Media Links
   social: {
-    linkedin: '#',
-    twitter: '#',
-    facebook: '#',
+    linkedin: 'https://www.linkedin.com/in/noah-daniel-090811361/',
+    twitter: 'https://x.com/NoahDaniel021',
+    facebook: 'https://www.facebook.com/noahdaniel021',
   },
 
   // Contact Information

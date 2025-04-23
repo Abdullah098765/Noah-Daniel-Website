@@ -208,4 +208,35 @@ footer a:hover {
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.magic-profile-pic {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.magic-profile-pic::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    #3b82f6,
+    #8b5cf6,
+    #ec4899,
+    #3b82f6
+  );
+  border-radius: 50%;
+  animation: rotate 4s linear infinite;
+  z-index: -1;
+}
+
+.magic-profile-pic::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: white;
+  border-radius: 50%;
+  z-index: -1;
 } 
