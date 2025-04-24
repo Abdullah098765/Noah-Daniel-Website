@@ -86,7 +86,7 @@ export const SITE_CONFIG = {
   social: {
     linkedin: 'https://www.linkedin.com/in/noah-daniel-090811361/',
     twitter: 'https://x.com/NoahDaniel021',
-    facebook: 'https://www.facebook.com/noahdaniel021',
+    facebook: 'https://www.facebook.com/profile.php?id=61569027283266',
   },
 
   // Contact Information
