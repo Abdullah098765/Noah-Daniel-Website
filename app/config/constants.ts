@@ -128,17 +128,17 @@ export const SITE_CONFIG = {
   // Testimonials
   testimonials: [
     {
-      quote: "Noah's AI automation solutions transformed our customer service. Response times improved by 80%!",
+      quote: "Noah's AI automation solutions transformed my customer service. Response times improved by 80%!",
       author: "Sarah Johnson",
       business: "Boutique Cafe",
     },
     {
-      quote: "The website Noah built for us has significantly increased our online bookings. Highly recommended!",
+      quote: "The website Noah built for me has significantly increased my online bookings. Highly recommended!",
       author: "Michael Chen",
       business: "Beauty Salon",
     },
     {
-      quote: "Our lead generation has never been better. The automated follow-up system is a game-changer.",
+      quote: "My lead generation has never been better. The automated follow-up system is a game-changer.",
       author: "David Rodriguez",
       business: "Fitness Studio",
     },
