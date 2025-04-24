@@ -1,7 +1,6 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { SITE_CONFIG } from '../config/constants';
 
 export default function About() {
